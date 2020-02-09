@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import Nav from './components/nav/nav.component';
+import Homepage from './pages/homepage/homepage.component';
+import SignUpSignIn from './pages/signup-signin/signup-signin.component';
+import Footer from './components/footer/footer.component';
+// import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <Nav />
+        <Homepage />
+        <SignUpSignIn />
+        <Footer />
+      </>
+    )
+  }
 }
 
 export default App;
